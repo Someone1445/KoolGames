@@ -1,0 +1,26 @@
+<html lang="en-us">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Slope Unblocked - UBG365</title>
+    <meta name="description" content="Slope Unblocked is a fun unblocked game that you can play at school from chromebook. In our catalog you can find many cool online games that you may enjoy.">
+    <link rel="stylesheet" href="assets/unity/style.css">
+    <script src="assets/unity/UnityProgress.js"></script>
+    <script src="unityloader41.js"></script>
+    <link rel="canonical" href="https://ubg365.github.io/slope/"/>
+    <!-- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- -->
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "slope_new.json", {
+            onProgress: UnityProgress,
+            Module: {
+                onRuntimeInitialized: function() {
+                    UnityProgress(gameInstance, "complete")
+                }
+            }
+        });
+    </script>
+    <div class="webgl-content">
+        <div id="gameContainer" style="width: 900px; height: 675px; margin: auto"></div>
+    </div>
+</html>
